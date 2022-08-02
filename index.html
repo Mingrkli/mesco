@@ -1,0 +1,311 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mesco</title>
+        <link rel="stylesheet" href="css/screen-loader.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/scroll-bar.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="js/screen-loader.js" defer></script>
+        <script src="js/img-slider-scripts.js" defer></script>
+        <script src="js/nav-script.js" defer></script>
+        <script src="js/page-travel.js" defer></script>
+        <script src="js/category-travel.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    </head>
+
+    <body>
+        <div id="nav-bar">
+            <span class="material-symbols-outlined nav-menu-btn">menu</span>
+            <div class="wrapper">
+                <button id="nav-home-btn">Home</button>
+                <button id="nav-products-btn" onclick="categoryBtnPress('All')">Products</button>
+                <button>About</button>
+                <button>Contact</button>
+                <button>Account</button>
+                <span class="material-symbols-outlined light-dark-btn">light_mode</span>
+                <span class="material-symbols-outlined hidden light-dark-btn">dark_mode</span>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <header>
+                <div>
+                    <img src="img/logo.png" alt="">
+                </div>
+
+                <div class="search-and-cart">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </div>
+            </header>
+
+            <div id="category-bar">
+                <a href="searching.html" onclick="categoryBtnPress('All')">All</a>
+                <a href="searching.html" onclick="categoryBtnPress('Topwear')">Topwear</a>
+                <a href="searching.html" onclick="categoryBtnPress('Bottomwear')">Bottomwear</a>
+                <a href="searching.html" onclick="categoryBtnPress('Jewelry')">Jewelry</a>
+                <a href="searching.html" onclick="categoryBtnPress('Bottle')">Bottle</a>
+            </div>
+
+            <div class="sliders">
+
+                <div class="slider">
+                    <img src="img/sale-one.jpg" alt="">
+                    <p class="credits">Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/sales-off?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                </div>
+
+                <div class="slider">
+                    <img src="img/sale-two.jpg" alt="">
+                    <p class="credits">Photo by <a href="https://unsplash.com/@belart84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Beliaikin</a> on <a href="https://unsplash.com/s/photos/sales-off?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                </div>
+
+                <div class="slider">
+                    <img src="img/sale-three.jpg" alt="">
+                    <p class="credits">Photo by <a href="https://unsplash.com/@tamanna_rumee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamanna Rumee</a> on <a href="https://unsplash.com/s/photos/sales-off?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                </div>
+
+                <button class="slider-btns btn-next">></button>
+                <button class="slider-btns btn-prev"><</button>
+
+            </div>
+
+            <div class="ad-containers">
+                <h1>Website Ad Image Here</h1>
+            </div>
+
+            <div class="wrapper">
+                <!-- News Section Rows -->
+                <div class="news-section">
+                    <h1>Summer Specials</h1>
+                    <div class="news-section-row">
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/clothing-line.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Summer Time Sale 
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                Ready to enjoy a summer day with great looks? Get your summer wear on with our special deals right now!
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">
+                                Photo by <a href="https://unsplash.com/@parkerburchfield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Parker Burchfield</a> on <a href="https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/sun-sale.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Hot Times
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                This month is going to be hot. Thats why we are having a special sale for drink containers to stay hydrated! Buy 2 and get 1 for free!
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">Photo by <a href="https://unsplash.com/@quokkabottle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">quokkabottles</a> on <a href="https://unsplash.com/s/photos/water-bottle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/rings.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Title Text Here
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                Text description here
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">
+                                Photo by <a href="https://unsplash.com/@kzzljhn00?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kazzle John Delbo</a> on <a href="https://unsplash.com/s/photos/jewelry-rings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ad-containers">
+                    <h1>Website Ad Image Here</h1>
+                </div>
+
+                <!-- News Section Row Two -->
+                <div class="news-section">
+                    <h1>Header Name Here</h1>
+                    <div class="news-section-row row-two">
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/clothing-line.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Title Text Here
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                Text description here
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">
+                                Photo by <a href="https://unsplash.com/@parkerburchfield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Parker Burchfield</a> on <a href="https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/clothing-line.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Title Text Here
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                Text description here
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">
+                                Photo by <a href="https://unsplash.com/@parkerburchfield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Parker Burchfield</a> on <a href="https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/clothing-line.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Title Text Here
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                Text description here
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">
+                                Photo by <a href="https://unsplash.com/@parkerburchfield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Parker Burchfield</a> on <a href="https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+                        <!-- News Section Container -->
+                        <div class="news-section-container">
+                            <img src="img/clothing-line.jpg" alt="">
+                            <p class="news-section-text">
+                                <!-- Title & Line Break, could create another flex div instead -->
+                                <span>
+                                    <!-- Title -->
+                                    Title Text Here
+                                    <!-- Arrow Icon -->
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    <!-- Line Break -->
+                                    <br>
+                                </span> 
+                                <!-- Text -->
+                                Text description here
+                            </p>
+                            <!-- Credits -->
+                            <p class="credits">
+                                Photo by <a href="https://unsplash.com/@parkerburchfield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Parker Burchfield</a> on <a href="https://unsplash.com/s/photos/clothing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                            
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <img class="footer-logo" src="img/logo.png" alt="">
+
+                <div class="footer-links">
+                    <h3>Help</h3>
+                    <a>Q&A</a>
+                    <a>Contact Us</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>About Tesco</h3>
+                    <a>About</a>
+                    <a>Membership</a>
+                    <a>Account</a>
+                    <a>Hours and Holiday Closures</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>About Website</h3>
+                    <a>Terms & conditions</a>
+                    <a>Privacy & cookies policy</a>
+                    <a>Privacy centre</a>
+                    <a>Accessibility</a>
+                    <a>Preventing Fraud</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Useful links</h3>
+                    <a>Store Locate</a>
+                    <a>Refund Items</a>
+                    <a>Our Socials</a>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="loading-wrapper">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+
+    </body>
+</html>
