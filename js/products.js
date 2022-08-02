@@ -9,12 +9,12 @@ let products = {
             creditLink: 'https://unsplash.com/@faithandyarn_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
         },
         {
-            name: 'Sapphire Ring',
+            name: 'Pink Ring',
             category: 'Jewelry',
             price: '399.99',
-            img: 'img/items/sapphire-ring.jpg',
-            creditName: 'Kuromi Lu',
-            creditLink: 'https://unsplash.com/@clovehome?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+            img: 'img/items/pink-ring.jpg',
+            creditName: 'Sabrianna',
+            creditLink: 'https://unsplash.com/@sabrinnaringquist?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
         },
         {
             name: 'Regular Black T-Shirt',

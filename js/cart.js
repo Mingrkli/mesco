@@ -86,7 +86,7 @@ function addToCart(cardImg, cardTitle, cardPrice) {
     let checkCardTitle = document.querySelectorAll('.cart-title')
     for (let i = 0; i < checkCardTitle.length; i++) {
         if (checkCardTitle[i].innerText === cardTitle) {
-            alert("You have already add this item to cart")
+            alert("You have already added this item to cart")
             return
         }
     }
