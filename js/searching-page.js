@@ -39,13 +39,10 @@ userSearchInput.addEventListener('input', () => {
 // category btn selected depending on user click
 categoryButtons.forEach (e => {
     e.addEventListener('click', () => {
-        // If the clicked btn doesn't contains selected class
-        if(!e.classList.contains('selected')) {
-            // Remove selected class form all btns
-            categoryButtons.forEach (e => {
-                e.classList.remove('selected')
-            })
-        }
+        // Remove selected class form all btns
+        categoryButtons.forEach (e => {
+            e.classList.remove('selected')
+        })
 
         // Add selected class to btn clicked
         e.classList.add('selected')
